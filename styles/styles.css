@@ -12,8 +12,18 @@ html {
 }
 
 .container {
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .photo-card {
   width: 200px;
+  height: 150px;
+  box-shadow: 10px 5px 5px gray;
+}
+.list-item {
+  list-style: none;
+
+  padding: 5px;
 }

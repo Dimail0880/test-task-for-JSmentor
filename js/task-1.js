@@ -1,9 +1,24 @@
+// TASK-1
+
 class StringBuilder {
-  constructor(baseSgtring) {
-    this.baseSgtring = baseSgtring;
+  constructor(baseString = "") {
+    this.value = baseString;
   }
+
   append(str) {
-    console.log(str);
+    this.value = this.value += str;
+  }
+  prepend(str) {
+    this.value = `${str}${this.value}`;
+  }
+  pad(str) {
+    this.value = `${str}${this.value}${str}`;
   }
 }
-export default StringBuilder;
+
+const builder = new StringBuilder(".");
+builder.append("^");
+builder.prepend("^");
+builder.pad("=");
+
+console.log(builder); // '=^.^='

@@ -3,12 +3,14 @@
 
 // Your API key: 15648239-f04327e653c12632b027fe07a
 
-const URL = "https://pixabay.com/api/?image_type=photo&orientation=horizontal";
+const URL =
+  "https://cors-anywhere.herokuapp.com/https://pixabay.com/api/?image_type=photo&orientation=horizontal";
 
 export default {
   page: 1,
   query: "",
   per_page: 20,
+  key: "15648239-f04327e653c12632b027fe07a",
   fetchItem() {
     const key = "15648239-f04327e653c12632b027fe07a";
     return fetch(

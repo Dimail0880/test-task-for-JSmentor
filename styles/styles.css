@@ -18,8 +18,8 @@ html {
   margin-bottom: 30px;
 }
 .photo-card {
-  width: 200px;
-  height: 150px;
+  width: 400px;
+  height: 250px;
   box-shadow: 10px 5px 5px gray;
 }
 .list-item {

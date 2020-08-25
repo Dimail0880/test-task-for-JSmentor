@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test tasks</title>
+
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/basiclightbox@5.0.3/dist/basicLightbox.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <input type="number" min="0" max="100" step="1" class="js-input" />
+      <button type="button" data-action="create">Создать</button>
+      <button type="button" data-action="destroy">Очистить</button>
+    </div>
+    <div id="boxes"></div>
+
+    <div id="root">
+      <ul class="js-gallery container" id="gallery"></ul>
+    </div>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.3/dist/basicLightbox.min.js"
+      integrity="sha256-M7LF7bc6ducQsay7FU3amhCwehVIzgruOfnvp4AQE4g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
